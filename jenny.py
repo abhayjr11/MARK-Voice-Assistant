@@ -1,3 +1,4 @@
+## code by abhay jaiswal
 import pyttsx3 #python text to speech
 import speech_recognition as sr #speech recognition
 import wikipedia #wikipedia
@@ -43,7 +44,7 @@ def takecmd():  #takes input from microphone convert it into command
         print("Recognizing...")
         query=r.recognize_google(audio,language='en_in') #recognize voice and change into text from google
         query=query.lower() #lower the query
-        print(query)
+        print(query)## code by abhay jaiswal
         
     except Exception as e:
         print("say that again please...")
@@ -69,7 +70,7 @@ def run_mark():             #base function that can contain the ways to work
     elif 'open facebook' in command:
         fb()
     elif 'who is' in command:
-        command.replace('who is', '')
+        command.replace('who is', '')## code by abhay jaiswal
         wikii(command)
     elif 'what is' in command:
         cmm=command.replace('what is', '')
@@ -95,7 +96,7 @@ def run_mark():             #base function that can contain the ways to work
     elif 'on youtube' in command:
         ytplay(command)
     elif 'play video' in command:
-        os.startfile('D:\\videos\\thor.mp4')
+        os.startfile('D:\\videos\\thor.mp4')## code by abhay jaiswal
     elif 'how are you ' in command:
         care()
     elif 'who created you' in command:
@@ -140,7 +141,7 @@ def multi(command):
 
 def sub(command):
     list=[]
-    list=command.split()
+    list=command.split()## code by abhay jaiswal
     result=(int(list[1])-int(list[3]))
     print(result)
     speak(result)
@@ -178,7 +179,7 @@ def record():
 def photoshop():
     os.startfile('C:\Program Files (x86)\Adobe Photoshop CS6\Photoshop.exe')
 
-def calc():
+def calc():## code by abhay jaiswal
     os.startfile('C:\Windows\System32\calc.exe')
 
 def paint():
